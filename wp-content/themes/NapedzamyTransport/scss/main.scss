@@ -1,0 +1,689 @@
+$fontColor:	yellow;
+$cdg:#009dda;
+$cue:#034ea1;
+$cplr:#D4213D;
+
+$mobil:600px;
+$tablet:794px;
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+*{
+  box-sizing: border-box;
+  margin: 0 0;
+  padding: 0;
+
+  }
+body {
+  font-family: 'Source Sans Pro', Verdana, sans-serif;
+}
+form {
+    font-size: 100%;
+    margin-top: 5px;
+    text-decoration: none;
+
+    a{
+      margin-top: 2px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-bottom: 2px;
+      font-size: 125%;
+      width:50%;
+      color: $cdg;
+      background: rgba(0,0,0,0);
+      border:rgba(0,0,0,0);
+      border-top: 2px solid white;
+
+    }
+
+    input {
+    width:100%;
+    padding: 2px 0;
+    margin: 2px 0;
+    border-radius: 5px;
+
+
+    &[type="button"]  {
+      width:50%;
+      color: $cdg;
+      background: rgba(0,0,0,0);
+      border:rgba(0,0,0,0);
+      border-top: 2px solid white;}
+      &[type="submit"] {
+        width:48%;
+        color: $cdg;
+        background: rgba(0,0,0,0);
+        border:rgba(0,0,0,0);
+        border-top: 2px solid white;}
+      &[type='text, password'] {
+          margin:5px 0px;
+          color: black;
+          }
+      }
+    input:hover {
+        border-top: 2px solid $cdg;
+        border-radius: 0;
+        color: $cue;
+        cursor: pointer;
+        }
+    input:active{
+      border-radius: 5px;
+    }
+
+}
+
+
+
+
+
+
+ul {
+  list-style: none;
+  width: 100%;
+}
+
+a {
+  border-top: 2px solid white;
+  color: $cdg;
+  display: block;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: 0,2 all;
+
+}
+a:hover {
+    border-top: 2px solid $cdg;
+    color: $cue;
+    list-style: none;
+
+}
+div #logo {
+  background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/screenshot_mini.png);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* margin: 0 auto; */
+  min-width: 7.5rem;
+  height: 7rem;
+  border: 5px solid white;
+  border-radius: 15px;
+
+}
+#header {
+  margin-top: 1px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    :last-child	{
+		flex-grow:	4;}
+}
+#nazwa {
+  font-size: 87%;
+  line-height: 130%;
+  max-width: 7.5rem;
+  height: 7rem;
+  background-color: $cdg;
+  border: 5px solid white;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+
+
+  .Transport {
+    color: $cplr;
+  }
+
+
+  .logowanie {
+    color: black;
+  font-weight: bold;
+  font-size: 50%;
+  line-height: 70%;
+  }
+}
+.headerForm {
+ display:none;
+}
+.headerMessage {
+  display: block;
+}
+
+.headerForm  {
+
+  min-width:10%;
+  max-width: 66.6%;
+  text-align: center;
+  line-height: 150%;
+  font-size: 70%;
+  margin-top: 9px;
+    .Witaj {
+      font-size: 160%;
+    }
+
+  form {
+
+      width:100%;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+
+    }
+  }
+}
+.UserAccountContainer  {
+  width: 57%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+
+  form * {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding: 2% 0;
+    &.row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      text-align: center;
+      a{font-size: 90%}
+
+
+
+    }
+  }
+}
+.pswRemindForm, .RegFormIn {
+ display: none;
+}
+
+
+
+
+.grid-container {
+  width: 100%;
+
+.innerGrid {
+  border: 1px solid blue;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:	space-around;
+
+
+}
+}
+.menu {
+  display: none;
+  font-size: 2rem;
+  line-height: 4rem;
+  align-self: flex-end;
+
+
+  li {
+
+       max-width: 100%;
+      text-align: center;}
+}
+.hamburger {
+    width: 7.5rem;
+    height: 7rem;
+    display: inline-block;
+    background-color: $cdg;
+    cursor: pointer;
+    border: 5px solid white;
+    padding: 0.1em;
+    border-radius: 15px;
+
+
+}
+.bar1, .bar2, .bar3 {
+    width: 80%;
+    height: 9px;
+    background-color: white;
+    margin: 15% auto;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-23px, 23px);
+    transform: rotate(-45deg) translate(-23px, 23px);
+    background-color: $cplr;
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-23px, 23px);
+    transform: rotate(45deg) translate(-16px, -16px);
+    background-color: $cplr;
+}
+
+      .paralax {
+
+        position: relative;
+        display:block;
+        height:100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 85%;
+
+
+        iFrame {
+          display: block;
+
+          width: 100%;
+          height: 100vh;
+
+        }
+        &::after {
+          content: "";
+          display: block;
+          height:100vh;
+          width: 100%;
+          background-color: rgba($cue, 0.8);
+          position: absolute;
+          top: 0px;
+        }
+        .MobilityIsAllAbout {
+          display: block;
+          height:30vh;
+          width: 100%;
+          color: white;
+          position: absolute;
+          top: 0px;
+          z-index: 1;
+          text-align: center;
+          margin-top: 35vh;
+          margin-bottom: 35vh;
+          background-color: $cue;
+          font-size: 2em;
+          line-height: 2.5em;
+
+          overflow: hidden;
+          border-right: .15em solid $cplr;
+          white-space: nowrap;
+          letter-spacing: .15em;
+          animation:
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+
+
+
+          @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+          }
+
+
+          @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: $cplr; }
+          }
+        }
+      }
+.menu-test-container {
+  display: none;
+}
+.SiteMap {
+  text-align: center;
+  font-size: 4rem;
+  color: $cplr;
+  padding-top: 10vw;
+}
+.ServiceMenu {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin: 20vh 10vw;
+border: 2px dashed $cplr;
+
+div {
+  background-position: left;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  width: 30%;
+  height: 20vh;
+  text-align: center;
+  font-size: 50%;
+
+}
+}
+.Onas {
+  background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/screenshot.png);
+  background-position: left;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  margin-top: 2vh;
+  padding-top: 5vh;
+}
+.whatsNew {
+  color: $cplr;
+  margin-top: 2vh;
+  padding-top: 0vh;
+
+  div {
+    padding: 0px;
+    margin-top: 0px;
+  }
+  ul {
+    height: 10%;
+    padding-top: 0;
+      margin-top: 0px;
+    li {
+      height: 10%;
+      line-height: 10%;
+        margin-top: 0px;
+        padding-top: 0;
+      div {
+          height: 10%;
+            margin-top: 0px;
+            padding-top: 0;
+      }
+    }
+  }
+  a{
+  font-size: 0.5em;
+   }
+  .wprss-feed-meta span{
+  font-size: 0.25em;
+  }
+}
+.Maas {
+  background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/maas-canada-montreal-22-638.jpg);
+  color: black;
+  margin-top: 2vh;
+  padding-top: 4vh;
+
+}
+.Planning {
+  background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/planning.jpg);
+  color: $cplr;
+  margin-top: 2vh;
+  padding-top: 5vh;
+}
+.Deployments {
+  background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/deployments.jpg);
+  color: $cplr;
+  margin-top: 2vh;
+  padding-top: 5vh;
+}
+.Evaluation {
+  background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/Evaluation.jpg);
+  color: $cplr;
+  margin-top: 2vh;
+  padding-top: 5vh;
+}
+.Operation {
+  background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/operation.jpeg);
+  color: $cplr;
+  margin-top: 2vh;
+  padding-top: 5vh;
+}
+
+.Owitrynie {
+  background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/ScreenshotOwitrynie.png);
+  color: $cplr;
+  margin-top: 2vh;
+  padding-top: 5vh;
+  }
+
+.footer-container {
+  width: 100%;
+  height: 20vh;
+  background-color: $cue;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 2vw;
+  padding-top: 3vh;
+  color: white;
+  span {letter-spacing: 3px;
+        font-size: 120%;}
+}
+
+
+  @media only screen and (min-width: $mobil) {
+   #zaloguj
+    {
+      display: none;}
+
+    #header {
+      flex-wrap: nowrap;
+    }
+    #nazwa {
+      display: none;
+    }
+    .halloNotLogged{
+      display: none;
+    }
+    .headerForm {
+      display: block;
+    }
+    div #logo {
+
+    }
+    .menu {
+      display: flex;
+      justify-content:	space-between;
+      font-size: 1rem;
+      line-height: 2rem;
+      height: 7rem;
+      width: 100%;
+      ul {
+        display: flex;
+        justify-content:	space-between;
+        width: 100%;
+
+      }
+      li {
+        border: 5px solid white;
+        border-radius: 15px;
+        text-align: center;
+        margin: auto;
+        max-width: 10rem;
+
+        transition: 0.2s all;
+      }
+      li:hover{
+
+      }
+      a {
+        display: inline-block;
+      }
+
+    }
+
+    .menu-test-container {
+      display: block;
+    }
+    .hamburger {
+      display:none;
+    }
+    .UserAccountContainerForm {
+     display: none;
+    }
+
+  }
+
+// website Onas
+
+
+.PageOnas{
+  margin: 2% 15%;
+  width: 70%;
+  color: $cue;
+  line-height: 140%;
+  text-indent: 3%;
+    hyphens: auto;
+  h1{
+    height: 20vh;
+    margin: 3vh 0;
+    max-height: 50px;
+    text-align: center;
+    letter-spacing: 25px;
+
+  }
+
+  p {
+
+
+    span {
+      font-size: 160%;
+      font-weight: bold;
+    }
+}
+
+}
+.cont {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.GrafOnas {
+  width: 275px;
+  height: 262px;
+  background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/screenshot.png);
+  background-position: left;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 2vh;
+  padding-top: 5vh;
+  position: relative;
+
+
+
+  .cog {
+  height: 72px;
+  width: 69px;
+  max-height: 25vh;
+  max-width: 42vw;
+  background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/cog.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  .cog1 {
+    height: 88px;
+    width: 91px;
+    position: absolute;
+    top: 30%;
+    left: 31%;
+  }
+  .cog2 {
+    position: absolute;
+    top: 41px;
+    left: 161px;
+  }
+  .cog3 {
+    position: absolute;
+    top: 155px;
+    left: 142px;
+  }
+  .cog4 {
+    position: absolute;
+    top: 46px;
+    left: 28px;
+  }
+
+  .icone {
+    height: 66px;
+    width: 69px;
+    max-height: 25vh;
+    max-width: 42vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(0.8);
+  }
+  .society {
+    background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/society.png);
+    height: 88px;
+    width: 91px;
+    position: absolute;
+    top: 30%;
+    left: 31%;
+  //  z-index: 1;
+  }
+  .authority {
+    background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/authority.png);
+    position: absolute;
+    top: 40px;
+    left: 30px;
+
+  }
+  .university{
+    background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/uni.png);
+    position: absolute;
+    top: 36px;
+    left: 161px;
+
+  }
+  .enterprise {
+    background-image: url(/Projekt_napedzamy_transport_40/wordpress/wp-content/themes/NapedzamyTransport/images/enterprise.png);
+    position: absolute;
+    top: 155px;
+    left: 142px;
+  }
+}
+
+#UserAccountOperations
+{
+  border-top: 1px solid $cue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3% 0;
+
+
+
+    li span{
+        margin: 1% 0;
+        border-top: 2px solid white;
+        color: $cdg;
+        display: block;
+        text-decoration: none;
+        font-size: 100%;
+        padding: 4px;
+        transition: 0,2 all;
+
+
+      &:hover {
+          border-top: 2px solid $cdg;
+          color: $cue;
+          list-style: none;
+
+      }
+
+
+      cursor: pointer;}
+    }
+
+@keyframes rspin {
+  0% { transform:rotate(0deg); }
+  100% { transform:rotate(-360deg); }
+ };
+@keyframes spin {
+  0% { transform:rotate(0deg); }
+  100% { transform:rotate(360deg); }
+ };
+
+ .BenefitDesc {
+  // display: none;
+  p {  margin-top: 2vh;
+    padding-top: 1vh;
+  }
+  max-width: 67%;
+  padding-left: 2vw;
+ }
